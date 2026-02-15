@@ -8,7 +8,6 @@ A lightweight and efficient logging system for **FiveM** servers that sends real
 
 * **📥 Player Connection:** Logs when a player joins (includes ID, IP, Discord, and License).
 * **📤 Player Disconnect:** Logs when a player leaves including the reason.
-* **⚔️ Kill Logs:** Tracks player-on-player kills.
 * **💬 Chat Logs:** Sends all chat messages (excluding commands) to Discord.
 * **💥 Explosion Protection:** Monitors and logs explosions (useful for anti-cheat).
 * **▶️ Resource Management:** Logs when scripts are started or stopped.
@@ -18,10 +17,10 @@ A lightweight and efficient logging system for **FiveM** servers that sends real
 
 ## 🚀 Installation
 
-1.  Create a folder named `yka_logs` in your server resources.
+1.  Create a folder named `ykaa_logs` in your server resources.
 2.  Place `fxmanifest.lua`, `config.lua`, and `server.lua` inside the folder.
 3.  Open `config.lua` and paste your **Discord Webhook URL**.
-4.  Add `ensure yka_logs` to your `server.cfg`.
+4.  Add `ensure ykaa_logs` to your `server.cfg`.
 5.  Restart your server.
 
 ---
@@ -33,7 +32,6 @@ You can easily toggle features in the `config.lua` file:
 ```lua
 Config.LogJoin = true           -- Log player connections
 Config.LogLeave = true          -- Log player disconnections
-Config.LogKill = true           -- Log PvP kills
 Config.LogChat = true           -- Log chat messages
 Config.LogExplosions = true     -- Log explosions
 Config.LogResources = true       -- Log resource start/stop
